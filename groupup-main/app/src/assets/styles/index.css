@@ -1,0 +1,153 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+
+/**
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
+@tailwind components;
+
+/**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
+@tailwind utilities;
+
+/* Import Source sans pro */
+@layer base {
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    src: url("./../fonts/SourceSansPro-Regular.ttf");
+    font-display: swap; /* for faster loading */
+  }
+}
+.btn {
+  @apply flex text-white justify-center text-center m-0 px-6 rounded-md hover:cursor-pointer w-24 h-10;
+  font-size: 12px;
+}
+.btn-green {
+  @apply bg-green hover:bg-green-lighter;
+}
+.btn-green-outline {
+  @apply bg-white text-green hover:bg-green-lighter;
+  border: 2px solid #8bb174;
+  box-sizing: border-box;
+}
+.btn-purple {
+  @apply bg-purple hover:bg-purple-lighter;
+}
+.btn-purple-outline {
+  @apply bg-white text-purple hover:bg-purple-lighter;
+  border: 2px solid #a266c7;
+  box-sizing: border-box;
+}
+
+input {
+  @apply bg-white;
+}
+
+.interests {
+  @apply flex m-2;
+}
+
+.interest {
+  @apply text-white p-1 mx-1;
+  border-radius: 40px;
+}
+
+.interest-purple {
+  @apply bg-purple;
+}
+
+.interest-green {
+  @apply bg-green;
+}
+
+.attribute {
+  @apply flex justify-center bg-green-lighter rounded-sm items-center mx-2;
+  min-width: 90px;
+  max-width: min-content;
+}
+
+.icon {
+  @apply text-white pr-1;
+  width: 15px;
+  height: 15px;
+}
+
+.create-event div {
+  @apply m-1;
+}
+
+.create-event-btn button {
+  @apply m-2;
+}
+
+.navbar {
+  @apply w-full;
+}
+
+.button-group ~ div,
+button {
+  @apply m-1;
+}
+
+h1 h2 h3 h4 p {
+  @apply p-2 font-sspro !important;
+}
+
+h1 {
+  @apply text-8xl;
+}
+
+h2 {
+  @apply text-6xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-xl !important;
+}
+
+p {
+  @apply text-base;
+}
+
+/* Under skriver vi inn global styles til ulike tags
+Eksempel:
+h1 {
+  @apply .........
+}
+*/
+
+/* Eksempel på hvordan man gjør det med komponenter
+@layer components {
+  .select2-dropdown {
+    @apply rounded-b-lg shadow-md;
+  }
+  .select2-search {
+    @apply border border-gray-300 rounded;
+  }
+  .select2-results__group {
+    @apply text-lg font-bold text-gray-900;
+  }
+}
+*/
+body {
+  @apply font-sspro;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

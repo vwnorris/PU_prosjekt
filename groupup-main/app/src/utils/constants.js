@@ -1,0 +1,30 @@
+export const defaultInterests = [
+  "Idrett",
+  "Fest",
+  "Friluftsliv",
+  "Gaming",
+  "Mat og drikke",
+  "Kunst og håndverk",
+  "Sosialt",
+  "Trening",
+  "Økonomi",
+];
+
+export const locations = [
+  "Bakklandet",
+  "Berg",
+  "Buran",
+  "Byåsen",
+  "Elgseter",
+  "Ila",
+  "Lade",
+  "Lerkendal",
+  "Midtbyen",
+  "Moholt",
+  "Møllenberg",
+  "Persaunet",
+  "Solsiden",
+  "Singsaker",
+  "Tyholt",
+  "Øya",
+];

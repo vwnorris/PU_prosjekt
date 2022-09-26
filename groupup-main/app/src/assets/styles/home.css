@@ -1,0 +1,30 @@
+.content-home {
+  @apply w-4/5 ml-auto mr-auto;
+}
+
+.avatars {
+  @apply flex text-center;
+}
+
+.groupAvatar {
+  @apply p-2 hover:scale-102;
+}
+
+.groupAvatar img {
+  height: 200px;
+  width: 200px;
+}
+
+.avatar-container {
+  @apply w-full mx-auto pt-2;
+}
+
+.avatar-container h3 {
+  @apply p-4;
+}
+
+.add-group {
+  @apply p-6 hover:border hover:scale-102;
+  height: 200px;
+  width: 200px;
+}
