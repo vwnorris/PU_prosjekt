@@ -24,4 +24,4 @@ Brukes til parprogrammering
 
 ### Firebase Explorer 🔥
 
-Brukes til Firebase, litt usikker på denne enda.
+Brukes til Firebase.
